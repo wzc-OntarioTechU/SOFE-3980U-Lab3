@@ -14,7 +14,7 @@ spec:
 				app: binarycalculator
 		spec:
 			containers:
-			      - image: 
+			      - image: northamerica-northeast2-docker.pkg.dev/sofe3980u-lab3-wzc100846922/sofe3980u/binarycalculator
 				name: binarycalculator
 				ports:
 				      - containerPort: 8080
