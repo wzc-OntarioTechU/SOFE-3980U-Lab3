@@ -30,16 +30,16 @@ public class BinaryController {
 		Binary number2=new Binary (operand2);
 		switch(operator)
 		{
-			case "+":
+			case "plus":
 				model.addAttribute("result", Binary.add(number1,number2).getValue());
 				return "result";
-			case "*":
+			case "multiply":
 				model.addAttribute("result", Binary.multiply(number1, number2).getValue());
 				return "result";
-			case "&":
+			case "anded":
 				model.addAttribute("result", Binary.and(number1, number2).getValue());
 				return "result";
-			case "|":
+			case "ored":
 				model.addAttribute("result", Binary.or(number1, number2).getValue());
 				return "result";
 			default:

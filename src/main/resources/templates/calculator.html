@@ -69,10 +69,10 @@
         <tr>
             <td colspan="2"><input type="text" id="operand1" name="operand1" th:value="${operand1}" onfocus="focusFun(false)" readonly></td>
             <td colspan="1"> <select id="operator" name="operator"  >
-			<option value="+">+</option>
-			<option value="*">*</option>
-			<option value="|">|</option>
-			<option value="&">&</option>
+			<option value="plus">+</option>
+			<option value="multiply">*</option>
+			<option value="ored">|</option>
+			<option value="anded">&</option>
 			<option value=" " hidden selected="selected" > </option>
 			</select></td>
             <td colspan="2"><input type="text" id="operand2" name="operand2" th:value="${operand2}" onfocus="focusFun(true)" readonly></td>
