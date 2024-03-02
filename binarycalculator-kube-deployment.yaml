@@ -1,0 +1,21 @@
+# This section handles deploying the app to the kluster
+apiVersion: apps/v1
+kind: Deployment
+metatdata:
+  name: binarycalculator-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: binarycalculator
+  template:
+    metadata:
+      labels:
+        app: binarycalculator
+    spec:
+      containers:
+      - image: northamerica-northeast2-docker.pkg.dev/sofe3980u-lab3-wzc100846922/sofe3980u/binarycalculator
+        name: binarycalculator
+        ports:
+        - containerPort: 8080
+          name: binarycalculator
