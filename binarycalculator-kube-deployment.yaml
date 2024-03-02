@@ -1,7 +1,7 @@
 # This section handles deploying the app to the kluster
 apiVersion: apps/v1
 kind: Deployment
-metatdata:
+metadata:
   name: binarycalculator-deployment
 spec:
   replicas: 1
